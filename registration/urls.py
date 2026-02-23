@@ -4,6 +4,5 @@ from .views import register
 app_name = 'registration'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('registration.urls')),   # changed
+    path('', register, name='register'),
 ]
