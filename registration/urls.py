@@ -3,7 +3,6 @@ from .views import register
 
 app_name = 'registration'
 
-urlpatterns = [
-    path('', include('registration.urls')),   
+urlpatterns = [   
     path('admin/', admin.site.urls),
 ]
